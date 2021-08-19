@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/conta_tres_sequencial.c
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+time.h
+-
+
