@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named contaTres
+# Target rules for targets named count_threes_parallel
 
 # Build rule for target.
-contaTres: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 contaTres
-.PHONY : contaTres
+count_threes_parallel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_threes_parallel
+.PHONY : count_threes_parallel
 
 # fast build rule for target.
-contaTres/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/build
-.PHONY : contaTres/fast
+count_threes_parallel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/build
+.PHONY : count_threes_parallel/fast
 
-conta_tres_sequencial.o: conta_tres_sequencial.c.o
-.PHONY : conta_tres_sequencial.o
+#=============================================================================
+# Target rules for targets named count_threes_sequential
+
+# Build rule for target.
+count_threes_sequential: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_threes_sequential
+.PHONY : count_threes_sequential
+
+# fast build rule for target.
+count_threes_sequential/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/build
+.PHONY : count_threes_sequential/fast
+
+count_threes_parallel.o: count_threes_parallel.c.o
+.PHONY : count_threes_parallel.o
 
 # target to build an object file
-conta_tres_sequencial.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o
-.PHONY : conta_tres_sequencial.c.o
+count_threes_parallel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.o
+.PHONY : count_threes_parallel.c.o
 
-conta_tres_sequencial.i: conta_tres_sequencial.c.i
-.PHONY : conta_tres_sequencial.i
+count_threes_parallel.i: count_threes_parallel.c.i
+.PHONY : count_threes_parallel.i
 
 # target to preprocess a source file
-conta_tres_sequencial.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/conta_tres_sequencial.c.i
-.PHONY : conta_tres_sequencial.c.i
+count_threes_parallel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.i
+.PHONY : count_threes_parallel.c.i
 
-conta_tres_sequencial.s: conta_tres_sequencial.c.s
-.PHONY : conta_tres_sequencial.s
+count_threes_parallel.s: count_threes_parallel.c.s
+.PHONY : count_threes_parallel.s
 
 # target to generate assembly for a file
-conta_tres_sequencial.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/conta_tres_sequencial.c.s
-.PHONY : conta_tres_sequencial.c.s
+count_threes_parallel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.s
+.PHONY : count_threes_parallel.c.s
+
+count_threes_sequential.o: count_threes_sequential.c.o
+.PHONY : count_threes_sequential.o
+
+# target to build an object file
+count_threes_sequential.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/count_threes_sequential.c.o
+.PHONY : count_threes_sequential.c.o
+
+count_threes_sequential.i: count_threes_sequential.c.i
+.PHONY : count_threes_sequential.i
+
+# target to preprocess a source file
+count_threes_sequential.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/count_threes_sequential.c.i
+.PHONY : count_threes_sequential.c.i
+
+count_threes_sequential.s: count_threes_sequential.c.s
+.PHONY : count_threes_sequential.s
+
+# target to generate assembly for a file
+count_threes_sequential.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/count_threes_sequential.c.s
+.PHONY : count_threes_sequential.c.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... contaTres"
-	@echo "... conta_tres_sequencial.o"
-	@echo "... conta_tres_sequencial.i"
-	@echo "... conta_tres_sequencial.s"
+	@echo "... count_threes_parallel"
+	@echo "... count_threes_sequential"
+	@echo "... count_threes_parallel.o"
+	@echo "... count_threes_parallel.i"
+	@echo "... count_threes_parallel.s"
+	@echo "... count_threes_sequential.o"
+	@echo "... count_threes_sequential.i"
+	@echo "... count_threes_sequential.s"
 .PHONY : help
 
 

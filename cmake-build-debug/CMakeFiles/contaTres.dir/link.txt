@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o -o contaTres 
+/usr/bin/cc -g CMakeFiles/contaTres.dir/count_threes_sequential.c.o -o contaTres 

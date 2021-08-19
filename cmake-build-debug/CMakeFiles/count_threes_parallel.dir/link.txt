@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.o -o count_threes_parallel 

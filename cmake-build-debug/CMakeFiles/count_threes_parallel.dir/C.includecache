@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_sequential.c
+/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_parallel.c
 stdio.h
 -
 unistd.h

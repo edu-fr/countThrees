@@ -66,27 +66,27 @@ include CMakeFiles/contaTres.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/contaTres.dir/flags.make
 
-CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o: CMakeFiles/contaTres.dir/flags.make
-CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o: ../conta_tres_sequencial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o -c /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/conta_tres_sequencial.c
+CMakeFiles/contaTres.dir/count_threes_sequential.c.o: CMakeFiles/contaTres.dir/flags.make
+CMakeFiles/contaTres.dir/count_threes_sequential.c.o: ../count_threes_sequential.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/contaTres.dir/count_threes_sequential.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/contaTres.dir/count_threes_sequential.c.o -c /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_sequential.c
 
-CMakeFiles/contaTres.dir/conta_tres_sequencial.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/contaTres.dir/conta_tres_sequencial.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/conta_tres_sequencial.c > CMakeFiles/contaTres.dir/conta_tres_sequencial.c.i
+CMakeFiles/contaTres.dir/count_threes_sequential.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/contaTres.dir/count_threes_sequential.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_sequential.c > CMakeFiles/contaTres.dir/count_threes_sequential.c.i
 
-CMakeFiles/contaTres.dir/conta_tres_sequencial.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/contaTres.dir/conta_tres_sequencial.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/conta_tres_sequencial.c -o CMakeFiles/contaTres.dir/conta_tres_sequencial.c.s
+CMakeFiles/contaTres.dir/count_threes_sequential.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/contaTres.dir/count_threes_sequential.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_sequential.c -o CMakeFiles/contaTres.dir/count_threes_sequential.c.s
 
 # Object files for target contaTres
 contaTres_OBJECTS = \
-"CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o"
+"CMakeFiles/contaTres.dir/count_threes_sequential.c.o"
 
 # External object files for target contaTres
 contaTres_EXTERNAL_OBJECTS =
 
-contaTres: CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o
+contaTres: CMakeFiles/contaTres.dir/count_threes_sequential.c.o
 contaTres: CMakeFiles/contaTres.dir/build.make
 contaTres: CMakeFiles/contaTres.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable contaTres"

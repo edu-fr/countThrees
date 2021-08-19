@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Ativida
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/contaTres.dir/all
+all: CMakeFiles/count_threes_parallel.dir/all
+all: CMakeFiles/count_threes_sequential.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/contaTres.dir/clean
+clean: CMakeFiles/count_threes_parallel.dir/clean
+clean: CMakeFiles/count_threes_sequential.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/contaTres.dir
+# Target rules for target CMakeFiles/count_threes_parallel.dir
 
 # All Build rule for target.
-CMakeFiles/contaTres.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target contaTres"
-.PHONY : CMakeFiles/contaTres.dir/all
+CMakeFiles/count_threes_parallel.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target count_threes_parallel"
+.PHONY : CMakeFiles/count_threes_parallel.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/contaTres.dir/rule: cmake_check_build_system
+CMakeFiles/count_threes_parallel.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/contaTres.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/count_threes_parallel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/contaTres.dir/rule
+.PHONY : CMakeFiles/count_threes_parallel.dir/rule
 
 # Convenience name for target.
-contaTres: CMakeFiles/contaTres.dir/rule
-.PHONY : contaTres
+count_threes_parallel: CMakeFiles/count_threes_parallel.dir/rule
+.PHONY : count_threes_parallel
 
 # clean rule for target.
-CMakeFiles/contaTres.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contaTres.dir/build.make CMakeFiles/contaTres.dir/clean
-.PHONY : CMakeFiles/contaTres.dir/clean
+CMakeFiles/count_threes_parallel.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/clean
+.PHONY : CMakeFiles/count_threes_parallel.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/count_threes_sequential.dir
+
+# All Build rule for target.
+CMakeFiles/count_threes_sequential.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target count_threes_sequential"
+.PHONY : CMakeFiles/count_threes_sequential.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/count_threes_sequential.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/count_threes_sequential.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/count_threes_sequential.dir/rule
+
+# Convenience name for target.
+count_threes_sequential: CMakeFiles/count_threes_sequential.dir/rule
+.PHONY : count_threes_sequential
+
+# clean rule for target.
+CMakeFiles/count_threes_sequential.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/clean
+.PHONY : CMakeFiles/count_threes_sequential.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

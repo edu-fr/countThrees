@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_sequential.c" "/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles/contaTres.dir/count_threes_sequential.c.o"
+  "/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_parallel.c" "/home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/cmake-build-debug/CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

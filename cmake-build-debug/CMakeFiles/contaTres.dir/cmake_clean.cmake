@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/contaTres.dir/conta_tres_sequencial.c.o"
+  "CMakeFiles/contaTres.dir/count_threes_sequential.c.o"
   "contaTres"
   "contaTres.pdb"
 )
