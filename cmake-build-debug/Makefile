@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named count_threes_parallel
+# Target rules for targets named count_threes_parallel_global_counter
 
 # Build rule for target.
-count_threes_parallel: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_threes_parallel
-.PHONY : count_threes_parallel
+count_threes_parallel_global_counter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_threes_parallel_global_counter
+.PHONY : count_threes_parallel_global_counter
 
 # fast build rule for target.
-count_threes_parallel/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/build
-.PHONY : count_threes_parallel/fast
+count_threes_parallel_global_counter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel_global_counter.dir/build.make CMakeFiles/count_threes_parallel_global_counter.dir/build
+.PHONY : count_threes_parallel_global_counter/fast
 
 #=============================================================================
 # Target rules for targets named count_threes_sequential
@@ -141,6 +141,19 @@ count_threes_sequential: cmake_check_build_system
 count_threes_sequential/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_sequential.dir/build.make CMakeFiles/count_threes_sequential.dir/build
 .PHONY : count_threes_sequential/fast
+
+#=============================================================================
+# Target rules for targets named count_threes_parallel
+
+# Build rule for target.
+count_threes_parallel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_threes_parallel
+.PHONY : count_threes_parallel
+
+# fast build rule for target.
+count_threes_parallel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/build
+.PHONY : count_threes_parallel/fast
 
 count_threes_parallel.o: count_threes_parallel.c.o
 .PHONY : count_threes_parallel.o
@@ -165,6 +178,30 @@ count_threes_parallel.s: count_threes_parallel.c.s
 count_threes_parallel.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel.dir/build.make CMakeFiles/count_threes_parallel.dir/count_threes_parallel.c.s
 .PHONY : count_threes_parallel.c.s
+
+count_threes_parallel_global_counter.o: count_threes_parallel_global_counter.c.o
+.PHONY : count_threes_parallel_global_counter.o
+
+# target to build an object file
+count_threes_parallel_global_counter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel_global_counter.dir/build.make CMakeFiles/count_threes_parallel_global_counter.dir/count_threes_parallel_global_counter.c.o
+.PHONY : count_threes_parallel_global_counter.c.o
+
+count_threes_parallel_global_counter.i: count_threes_parallel_global_counter.c.i
+.PHONY : count_threes_parallel_global_counter.i
+
+# target to preprocess a source file
+count_threes_parallel_global_counter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel_global_counter.dir/build.make CMakeFiles/count_threes_parallel_global_counter.dir/count_threes_parallel_global_counter.c.i
+.PHONY : count_threes_parallel_global_counter.c.i
+
+count_threes_parallel_global_counter.s: count_threes_parallel_global_counter.c.s
+.PHONY : count_threes_parallel_global_counter.s
+
+# target to generate assembly for a file
+count_threes_parallel_global_counter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_threes_parallel_global_counter.dir/build.make CMakeFiles/count_threes_parallel_global_counter.dir/count_threes_parallel_global_counter.c.s
+.PHONY : count_threes_parallel_global_counter.c.s
 
 count_threes_sequential.o: count_threes_sequential.c.o
 .PHONY : count_threes_sequential.o
@@ -199,10 +236,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... count_threes_parallel"
+	@echo "... count_threes_parallel_global_counter"
 	@echo "... count_threes_sequential"
 	@echo "... count_threes_parallel.o"
 	@echo "... count_threes_parallel.i"
 	@echo "... count_threes_parallel.s"
+	@echo "... count_threes_parallel_global_counter.o"
+	@echo "... count_threes_parallel_global_counter.i"
+	@echo "... count_threes_parallel_global_counter.s"
 	@echo "... count_threes_sequential.o"
 	@echo "... count_threes_sequential.i"
 	@echo "... count_threes_sequential.s"

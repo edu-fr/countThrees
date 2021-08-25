@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/count_threes_sequential.dir/count_threes_sequential.c.o -o count_threes_sequential 
+/usr/bin/cc  -lpthread -o3 -g CMakeFiles/count_threes_sequential.dir/count_threes_sequential.c.o -o count_threes_sequential 

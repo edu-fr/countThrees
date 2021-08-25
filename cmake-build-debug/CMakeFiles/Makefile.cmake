@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/count_threes_parallel.dir/DependInfo.cmake"
+  "CMakeFiles/count_threes_parallel_global_counter.dir/DependInfo.cmake"
   "CMakeFiles/count_threes_sequential.dir/DependInfo.cmake"
+  "CMakeFiles/count_threes_parallel.dir/DependInfo.cmake"
   )

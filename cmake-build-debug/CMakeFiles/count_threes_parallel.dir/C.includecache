@@ -9,10 +9,16 @@
 /home/eduardo/Documentos/Facul/ProgramacaoConcorrente/Atividades/contaTres/count_threes_parallel.c
 stdio.h
 -
+time.h
+-
 unistd.h
 -
 stdlib.h
 -
-time.h
+pthread.h
+-
+errno.h
+-
+math.h
 -
 

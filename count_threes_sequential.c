@@ -12,13 +12,12 @@ int main(int argc, char *argv[]) {
                 break;
 
             case 'h':
-                printf("Three Counter\nGet how many number 3's a n-sized vector contains.\n\n"
+                printf("Three Counter\nGet how many number threes a n-sized vector contains.\n\n"
                        "Arguments:\n-n Vector size (ex: -n 1024)\n-h Help\n");
                 exit(EXIT_SUCCESS);
 
             default:
-                fprintf(stderr, "Arguments error. Execute -h to get help .\n",
-                        argv[0]);
+                fprintf(stderr, "Arguments error. Execute -h to get help.\n");
                 exit(EXIT_FAILURE);
         }
     }
@@ -34,6 +33,6 @@ int main(int argc, char *argv[]) {
         if(vector[i] == 3) counter++;
     }
 
-    printf("Number of threes: %d", counter);
+    // printf("Number of threes: %d", counter);
     return 0;
 }
